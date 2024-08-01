@@ -1,0 +1,67 @@
+.containerCookies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79.6vh;
+  background-color: #151515c6;
+  position: absolute;
+}
+
+.containerCookies h1 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.banierCookie {
+  border: 1px solid black;
+  background-color: #fff;
+  width: 90%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.paragrapheCookie {
+  width: 100%;
+  padding: 10%;
+}
+
+.paragrapheCookie p {
+  font-size: 1.2em;
+}
+
+.boutonsCookies {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid blue; */
+  width: 45%;
+  margin-bottom: 2%;
+}
+
+.accepterBoutonStyle {
+  width: 45%;
+  height: 5vh;
+  border: 1px solid #e6be78;
+  background-color: #e6be78;
+}
+
+.accepterBoutonStyle:hover {
+  border-color: #ae8c51;
+  background-color: #ae8c51;
+  color: white;
+  box-shadow: 3px 3px 3px 3px rgba(222, 222, 222, 0.81);
+}
+
+.refuserBoutonStyle {
+  width: 45%;
+  height: 5vh;
+  border: 1px solid black;
+}
+
+.refuserBoutonStyle:hover {
+  border: 2px solid black;
+  box-shadow: 3px 3px 3px 3px rgba(222, 222, 222, 0.81);
+}

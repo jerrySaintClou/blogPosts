@@ -1,0 +1,62 @@
+.authContainer {
+  height: 79.6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222222eb;
+}
+
+.changeForm {
+  display: flex;
+  gap: 10px;
+}
+
+.changeForm p {
+  font-size: 1.2em;
+  color: white;
+}
+
+.linkSignupForm {
+  color: #ffffffe1;
+  cursor: pointer;
+}
+
+.linkSignupForm:hover {
+  text-decoration: underline;
+}
+
+.titleAuth {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+}
+
+.boutonDiv {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 55%;
+}
+
+.boutonStyle {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  width: 15%;
+  height: 5vh;
+  color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px 3px rgba(236, 236, 236, 0.81);
+}
+
+.boutonStyle2 {
+  border: 1px solid #222222eb;
+  background-color: #222222eb;
+  width: 15%;
+  height: 5vh;
+  color: white;
+}
+
+.boutonStyle2:hover {
+  border-color: rgb(255, 255, 255);
+  background-color: #222222eb;
+}

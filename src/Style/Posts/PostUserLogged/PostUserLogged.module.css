@@ -1,0 +1,30 @@
+.allPostsUserLogged {
+  /* border: 1px solid green; */
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cardPost {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+}
+
+.cardPost img {
+  width: 100%;
+}
+
+.cardPost p {
+  font-size: 1em;
+}
+
+.cardPost span {
+  font-weight: bold;
+  font-size: 1em;
+}

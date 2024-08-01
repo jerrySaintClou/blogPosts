@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.barNav {
+  border: 1px solid #e6be78;
+  background-color: #e6be78;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barNavDark {
+  border: 1px solid #222121fc;
+  background-color: #222121fc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+/* .logo img {
+  width: 70px;
+  height: 70px;
+} */
+
+.logoImage {
+  width: 70px;
+  height: 70px;
+}
+
+.logo span {
+  font-size: 1.3em;
+}
+
+.liensNavBar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin-right: 0.5%;
+  width: 850px;
+}
+
+.leLien {
+  /* border: 1px solid blue; */
+  width: 25%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.menu {
+  width: 70px;
+  height: 10vh;
+  /* border: 1px solid blue; */
+  font-size: 1.2em;
+  display: none;
+  cursor: pointer;
+}
+
+.changeThemeDiv {
+  /* border: 1px solid blue; */
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 8vh;
+}
+
+.changeThemeDiv:hover {
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px 1px rgba(65, 65, 65, 0.81);
+  transform: scale(1.01);
+}
+
+.changeThemeDivDark {
+  /* border: 1px solid blue; */
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 8vh;
+  color: white;
+}
+
+.changeThemeDivDark:hover {
+  border: 2px solid #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(65, 65, 65, 0.81);
+  transform: scale(1.01);
+}
+
+/*-----------------------------------------------------------------------Style barNavVerticale----------------------------------------------------------- */
+
+.barNavVertical {
+  /* border: 1px solid red; */
+  /* background-color: #e6be78;
+  width: 30%;
+  height: 87.7vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 96px;
+  left: -580px;
+  transition: all 1.2s cubic-bezier(0.38, 1.06, 0.94, 0.18); */
+  /*animation: 2s cubic-bezier(.47,.78,.74,.14) mouvementHorizontal;*/
+  display: none;
+}
+
+.lienVertical {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.animation1 {
+  display: none;
+}
+
+.animation2 {
+  border: 1px solid black;
+  background-color: #e6be78;
+  width: 30%;
+  height: 87.7vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: 2s cubic-bezier(0.47, 0.78, 0.74, 0.14) mouvementHorizontal2;
+}
+
+@keyframes mouvementHorizontal {
+  0% {
+    transform: translateX(-182px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes mouvementHorizontal2 {
+  0% {
+    transform: translateX(0px);
+  }
+  99% {
+    transform: translateX(-182px);
+  }
+
+  100% {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------------------------------Responsive-----------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 602px) {
+  .liensNavBar {
+    width: 70px;
+  }
+  .leLien {
+    width: 33%;
+    display: none;
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .animation1 {
+    /* border: 1px solid black; */
+    background-color: #e6be78;
+    width: 30%;
+    height: 87.7vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 96px;
+    left: 0px;
+    transition: all 1.2s cubic-bezier(0.38, 1.06, 0.94, 0.18);
+    /* animation: 2s cubic-bezier(0.47, 0.78, 0.74, 0.14) mouvementHorizontal; */
+  }
+  .barNavVertical {
+    /* border: 1px solid red; */
+    background-color: #e6be78;
+    width: 30%;
+    height: 87.7vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 96px;
+    left: -580px;
+    transition: all 1.2s cubic-bezier(0.38, 1.06, 0.94, 0.18);
+    /*animation: 2s cubic-bezier(.47,.78,.74,.14) mouvementHorizontal;*/
+    /* display: none; */
+  }
+}
+/* 
+@media screen and (max-width: 481px) {
+  .logo {
+    border: 1px solid blue;
+  }
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .liensNavBar {
+    width: 200px;
+  }
+  .leLien {
+    font-size: 1em;
+  }
+} */

@@ -1,0 +1,12 @@
+.containerHome {
+  height: 79.6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerHome h1 {
+  font-size: 1.1em;
+  font-weight: bold;
+}

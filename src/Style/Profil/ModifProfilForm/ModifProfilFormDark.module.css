@@ -1,0 +1,41 @@
+.formModifProfil {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.divInputModifProfil {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 8px;
+  width: 90%;
+}
+
+.divInputModifProfil input[type="text"] {
+  /* display: none; */
+  border: 1px solid #ffffff;
+  height: 4vh;
+  color: black;
+}
+
+.divInputModifProfil textarea {
+  color: black;
+}
+
+.formModifProfil button {
+  width: 50%;
+  border: 1px solid #d8d8d8;
+  height: 4vh;
+  background-color: #d8d8d8;
+  color: black;
+}
+
+.formModifProfil button:hover {
+  border-color: #949494;
+  background-color: #949494;
+  color: white;
+}
